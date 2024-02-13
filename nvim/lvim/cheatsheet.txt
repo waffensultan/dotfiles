@@ -1,0 +1,31 @@
+LUNARVIM
+
+<space>bd "Delete Buffer" | CUSTOM
+<space>gg "Open lazygit"
+<space>sf "Find files"
+<shift># "Find line occurrences"
+
+:resize "Resize/recalculate panel sizes"
+
+-----------------------------
+LAZYGIT
+
+q "Exit"
+1-5 "Switch panel"
+a "git add -A"
+z "undo"
+
+<ctrl>z "redo"
+
+-----------------------------
+TOGGLETERM
+
+<C-3> "Toggle floating term"
+<C-2> "Toggle vertical term"
+<C-1> "Toggle horizontal term"
+
+-----------------------------
+NOTES
+
+<M> = <C>
+<leader> = <space>
