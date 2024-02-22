@@ -1,13 +1,14 @@
 {
-    // Last updated: 2/18/2024
+    // Last updated: 2/22/2024
     // Extensions installed:
-    // - Center Editor Window
-    // - Dracula Official
+    // - Ayu
     // - Error Lens
     // - Material Icon Theme
     // - Prettier - Code formatter
+    // - Go
 
     "security.workspace.trust.untrustedFiles": "open",
+    "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "breadcrumbs.enabled": false,
     "scm.diffDecorations": "gutter",
@@ -21,28 +22,33 @@
     "explorer.decorations.colors": false,
 
     // Terminal
-    "terminal.integrated.fontFamily": "Fira Code Mono",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
     "terminal.integrated.fontSize": 13,
 
     // Workbench
     "workbench.layoutControl.enabled": false,
-    "workbench.statusBar.visible": false,
+    "workbench.statusBar.visible": true,
     "workbench.startupEditor": "none",
     "workbench.editor.enablePreview": false,
     "workbench.editor.decorations.colors": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Dracula",
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.activityBar.location": "top",
+    "workbench.sideBar.location": "right",
+    "workbench.colorTheme": "Ayu Mirage",
 
     // Window
     "window.customTitleBarVisibility": "windowed",
     "window.zoomLevel": 1,
     "window.title": " ",
+    "window.menuBarVisibility": "toggle",
     "window.commandCenter": false,
+    "window.titleBarStyle": "custom",
 
     // Editor
     "editor.fontSize": 13,
-    "editor.fontFamily": "JetBrains Mono Light",
-    "editor.fontLigatures": false,
+    "editor.fontFamily": "Iosevka Expanded",
+    "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.cursorBlinking": "phase",
@@ -61,14 +67,33 @@
     "editor.scrollbar.verticalScrollbarSize": 5,
     "editor.scrollbar.horizontal": "hidden",
     "editor.minimap.enabled": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.guides.indentation": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
 
     /* EXTENSIONS */
 
     // Prettier
+    "prettier.jsxSingleQuote": true,
+    "prettier.tabWidth": 4,
+
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "prettier.jsxSingleQuote": true,
-    "prettier.tabWidth": 4
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+
+    // Indent-Rainbow
+    "indentRainbow.excludedLanguages": ["plaintext"],
+    "indentRainbow.indicatorStyle": "light",
+    "indentRainbow.lightIndicatorStyleLineWidth": 1,
+    "indentRainbow.colors": [
+        "rgba(255,255,64,0.3)",
+        "rgba(127,255,127,0.3)",
+        "rgba(255,127,255,0.3)",
+        "rgba(79,236,236,0.3)"
+    ]
 }
