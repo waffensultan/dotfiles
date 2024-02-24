@@ -8,7 +8,6 @@
     // - Material Icon Theme
     // - Prettier - Code formatter
     // - Go
-    // - Apc Customize UI++
 
     "security.workspace.trust.untrustedFiles": "open",
     "breadcrumbs.enabled": false,
@@ -44,6 +43,9 @@
     "workbench.colorTheme": "Gruvbox Material Dark",
     "workbench.tree.enableStickyScroll": false,
     "workbench.editor.showTabs": "single",
+    "workbench.activityBar.location": "top",
+    "workbench.layoutControl.enabled": false,
+    "workbench.sideBar.location": "right",
     // "workbench.activityBar.location": "top",
     // "workbench.colorCustomizations": {
     //     "editor.background": "#00000000"
@@ -56,6 +58,8 @@
     "window.zoomLevel": 1,
     "window.title": " ",
     "window.titleBarStyle": "custom",
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "toggle",
 
     // Editor
     "editor.fontSize": 13,
@@ -102,18 +106,5 @@
 
     // Prettier
     "prettier.jsxSingleQuote": true,
-    "prettier.tabWidth": 4,
-
-    // APC
-    "apc.electron": {
-        "transparent": true,
-        "opacity": 0.93,
-        "frame": false
-        // "backgroundColor": "rgba(123, 123, 123, 0.5)"
-    },
-    "window.commandCenter": false,
-    "window.menuBarVisibility": "toggle",
-    "workbench.activityBar.location": "top",
-    "workbench.layoutControl.enabled": false,
-    "workbench.sideBar.location": "right"
+    "prettier.tabWidth": 4
 }
