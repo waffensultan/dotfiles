@@ -1,17 +1,16 @@
 {
     // Last updated: 2/24/2024
     // Extensions installed:
-    // - Gruvbox Theme
     // - Gruvbox Material
-    // - Kanagawa
+    // - Kanagawa Black
     // - Error Lens
     // - Material Icon Theme
     // - Prettier - Code formatter
     // - Go
 
     "security.workspace.trust.untrustedFiles": "open",
-    "breadcrumbs.enabled": false,
     "scm.diffDecorations": "gutter",
+    "breadcrumbs.enabled": false,
 
     // JS/TS
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -35,23 +34,23 @@
     // Terminal
     "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
     "terminal.integrated.fontSize": 13,
+
+    // Workbench
     "workbench.startupEditor": "none",
     "workbench.editor.enablePreview": false,
     "workbench.editor.decorations.colors": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.tree.renderIndentGuides": "none",
-    "workbench.colorTheme": "Gruvbox Material Dark",
+    "workbench.colorTheme": "Kanagawa Black",
     "workbench.tree.enableStickyScroll": false,
-    "workbench.editor.showTabs": "single",
+    "workbench.editor.showTabs": "multiple",
     "workbench.activityBar.location": "top",
     "workbench.layoutControl.enabled": false,
     "workbench.sideBar.location": "right",
-    // "workbench.activityBar.location": "top",
+    "workbench.statusBar.visible": false,
     // "workbench.colorCustomizations": {
     //     "editor.background": "#00000000"
     // },
-    // "workbench.statusBar.visible": false,
-    // "workbench.editor.showTabs": "single"
 
     // Window
     "window.customTitleBarVisibility": "windowed",
@@ -59,7 +58,6 @@
     "window.title": " ",
     "window.titleBarStyle": "custom",
     "window.commandCenter": false,
-    "window.menuBarVisibility": "toggle",
 
     // Editor
     "editor.fontSize": 13,
