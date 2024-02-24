@@ -1,17 +1,29 @@
 {
-    // Last updated: 2/22/2024
+    // Last updated: 2/24/2024
     // Extensions installed:
-    // - Ayu
+    // - Gruvbox Theme
+    // - Gruvbox Material
+    // - Kanagawa
     // - Error Lens
     // - Material Icon Theme
     // - Prettier - Code formatter
     // - Go
+    // - Apc Customize UI++
 
     "security.workspace.trust.untrustedFiles": "open",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "typescript.updateImportsOnFileMove.enabled": "always",
     "breadcrumbs.enabled": false,
     "scm.diffDecorations": "gutter",
+
+    // JS/TS
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "javascript.preferences.importModuleSpecifier": "non-relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.preferences.importModuleSpecifier": "non-relative",
+
+    // Go
+    "gopls": {
+        "ui.semanticTokens": true
+    },
 
     // Git
     "git.autofetch": true,
@@ -24,30 +36,33 @@
     // Terminal
     "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
     "terminal.integrated.fontSize": 13,
-
-    // Workbench
-    "workbench.layoutControl.enabled": false,
-    "workbench.statusBar.visible": true,
     "workbench.startupEditor": "none",
     "workbench.editor.enablePreview": false,
     "workbench.editor.decorations.colors": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.tree.renderIndentGuides": "none",
-    "workbench.activityBar.location": "top",
-    "workbench.sideBar.location": "right",
-    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "workbench.tree.enableStickyScroll": false,
+    "workbench.editor.showTabs": "single",
+    // "workbench.activityBar.location": "top",
+    // "workbench.colorCustomizations": {
+    //     "editor.background": "#00000000"
+    // },
+    // "workbench.statusBar.visible": false,
+    // "workbench.editor.showTabs": "single"
 
     // Window
     "window.customTitleBarVisibility": "windowed",
     "window.zoomLevel": 1,
     "window.title": " ",
-    "window.menuBarVisibility": "toggle",
-    "window.commandCenter": false,
     "window.titleBarStyle": "custom",
 
     // Editor
     "editor.fontSize": 13,
-    "editor.fontFamily": "Iosevka Expanded",
+    "editor.semanticHighlighting.enabled": "configuredByTheme",
+    // "editor.fontFamily": "Iosevka Expanded",
+    // "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "JetBrains Mono", // Light for themes like Tokyo Night
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
@@ -72,13 +87,10 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": "explicit"
     },
+    "editor.stickyScroll.scrollWithEditor": false,
+    // "editor.renderWhitespace": "boundary",
 
-    /* EXTENSIONS */
-
-    // Prettier
-    "prettier.jsxSingleQuote": true,
-    "prettier.tabWidth": 4,
-
+    // Formatting
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
@@ -86,14 +98,22 @@
         "editor.defaultFormatter": "golang.go"
     },
 
-    // Indent-Rainbow
-    "indentRainbow.excludedLanguages": ["plaintext"],
-    "indentRainbow.indicatorStyle": "light",
-    "indentRainbow.lightIndicatorStyleLineWidth": 1,
-    "indentRainbow.colors": [
-        "rgba(255,255,64,0.3)",
-        "rgba(127,255,127,0.3)",
-        "rgba(255,127,255,0.3)",
-        "rgba(79,236,236,0.3)"
-    ]
+    /* EXTENSIONS */
+
+    // Prettier
+    "prettier.jsxSingleQuote": true,
+    "prettier.tabWidth": 4,
+
+    // APC
+    "apc.electron": {
+        "transparent": true,
+        "opacity": 0.93,
+        "frame": false
+        // "backgroundColor": "rgba(123, 123, 123, 0.5)"
+    },
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "toggle",
+    "workbench.activityBar.location": "top",
+    "workbench.layoutControl.enabled": false,
+    "workbench.sideBar.location": "right"
 }
