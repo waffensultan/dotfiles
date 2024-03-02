@@ -1,16 +1,17 @@
 {
-    // Last updated: 2/24/2024
+    // Last updated: 3/2/2024
     // Extensions installed:
-    // - Gruvbox Material
-    // - Kanagawa Black
-    // - Error Lens
-    // - Material Icon Theme
-    // - Prettier - Code formatter
     // - Go
+    // - Vim
+    // - Error Lens
+    // - Prettier - Code formatter
+    // - Fluent Icons
+    // - Material Icon Theme
+    // - Kanagawa Black
 
     "security.workspace.trust.untrustedFiles": "open",
     "scm.diffDecorations": "gutter",
-    "breadcrumbs.enabled": false,
+    "breadcrumbs.enabled": true,
 
     // JS/TS
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -21,6 +22,37 @@
     // Go
     "gopls": {
         "ui.semanticTokens": true
+    },
+
+    // Formatting
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+
+    // Theme
+    // Removes bold and italics from themes
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "comment",
+                    "meta.var.expr storage.type",
+                    "keyword.control.flow",
+                    "keyword.control.return",
+                    "meta.directive.vue punctuation.separator.key-value.html",
+                    "meta.directive.vue entity.other.attribute-name.html",
+                    "tag.decorator.js entity.name.tag.js",
+                    "tag.decorator.js punctuation.definition.tag.js",
+                    "storage.modifier"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
     },
 
     // Git
@@ -36,41 +68,46 @@
     "terminal.integrated.fontSize": 13,
 
     // Workbench
+    "workbench.colorTheme": "Kanagawa Black",
+    "workbench.layoutControl.enabled": false,
     "workbench.startupEditor": "none",
     "workbench.editor.enablePreview": false,
     "workbench.editor.decorations.colors": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.tree.renderIndentGuides": "none",
-    "workbench.colorTheme": "Kanagawa Black",
+    "workbench.tree.renderIndentGuides": "always",
     "workbench.tree.enableStickyScroll": false,
     "workbench.editor.showTabs": "multiple",
-    "workbench.activityBar.location": "top",
-    "workbench.layoutControl.enabled": false,
-    "workbench.sideBar.location": "right",
-    "workbench.statusBar.visible": false,
-    // "workbench.colorCustomizations": {
-    //     "editor.background": "#00000000"
-    // },
+    "workbench.statusBar.visible": true,
+    "workbench.productIconTheme": "fluent-icons",
 
     // Window
     "window.customTitleBarVisibility": "windowed",
+    "window.commandCenter": false,
+    "window.menuBarVisibility": "compact",
     "window.zoomLevel": 1,
     "window.title": " ",
     "window.titleBarStyle": "custom",
-    "window.commandCenter": false,
 
     // Editor
+    "editor.cursorSurroundingLines": 8,
+    "editor.stickyScroll.enabled": false,
     "editor.fontSize": 13,
+    "editor.lineNumbers": "relative",
     "editor.semanticHighlighting.enabled": "configuredByTheme",
     // "editor.fontFamily": "Iosevka Expanded",
     // "editor.fontFamily": "Fira Code",
-    "editor.fontFamily": "JetBrains Mono", // Light for themes like Tokyo Night
+    "editor.fontFamily": "JetBrains Mono Light", // Light for themes like Tokyo Night
+    // "editor.fontFamily": "'Monaspace Neon Light'",
+    // "editor.fontFamily": "Monocraft",
+    // "editor.fontFamily": "Hack",
+    // "editor.fontFamily": "Hack FC Ligatured CCG",
+    // "editor.fontFamily": "Hack JBM Ligatured",
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.cursorBlinking": "phase",
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.smoothScrolling": true,
+    // "editor.cursorSmoothCaretAnimation": "on",
+    // "editor.smoothScrolling": true,
     // Configurations from Reddit to fix autocomplete
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.acceptSuggestionOnEnter": "off",
@@ -90,19 +127,47 @@
         "source.organizeImports": "explicit"
     },
     "editor.stickyScroll.scrollWithEditor": false,
+    "editor.renderLineHighlight": "none",
     // "editor.renderWhitespace": "boundary",
 
-    // Formatting
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[go]": {
-        "editor.defaultFormatter": "golang.go"
-    },
-
     /* EXTENSIONS */
-
     // Prettier
     "prettier.jsxSingleQuote": true,
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+
+    // VSCode Vim (undoubtedly better)
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "vim.smartRelativeLine": true,
+
+    // Highlights yanking
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.duration": 200,
+
+    // Keybindings
+    "vim.normalModeKeyBindingsNonRecursive": [
+        { "before": ["<S-h>"], "commands": [":bprevious"] },
+        { "before": ["<S-l>"], "commands": [":bnext"] },
+        {
+            "before": ["<leader>", "g", "f"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "c", "p"],
+            "commands": ["workbench.action.showCommands"]
+        },
+        // {
+        //     "before": ["<leader>", "g", "s"],
+        //     "commands": ["workbench.action.gotoSymbol"]
+        // },
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.view.explorer"]
+        }
+    ],
+
+    // For better extension performance
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    }
 }
