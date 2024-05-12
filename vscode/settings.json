@@ -1,26 +1,20 @@
 {
-    // Last updated: 4/3/2024
-    // Extensions installed:
-    // - Vim
+    /** Extension */
     // - Error Lens
-    // - Prettier - Code formatter
+    // - Gruvbox Theme
     // - Material Icon Theme
-    // - Github Theme
+    // - Prettier Code Formatter
+    // - Vim (Priority)
 
+    "breadcrumbs.enabled": true,
     "security.workspace.trust.untrustedFiles": "open",
     "scm.diffDecorations": "gutter",
-    "breadcrumbs.enabled": true,
 
     /* JS/TS */
     "javascript.updateImportsOnFileMove.enabled": "always",
     "javascript.preferences.importModuleSpecifier": "non-relative",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "typescript.preferences.importModuleSpecifier": "non-relative",
-
-    /* Go */
-    "gopls": {
-        "ui.semanticTokens": true
-    },
 
     /* Formatting */
     "[typescriptreact]": {
@@ -36,14 +30,14 @@
     "explorer.decorations.colors": false,
 
     /* Terminal */
-    // "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
-    "terminal.integrated.fontFamily": "JetBrains Mono",
-    // "terminal.integrated.fontFamily": "Iosevka Expanded",
+    "terminal.integrated.fontFamily": "Zed Mono Expanded",
     "terminal.integrated.fontSize": 13,
 
     /* Workbench */
     "workbench.layoutControl.enabled": false,
-    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.sideBar.location": "right",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
     "workbench.editor.enablePreview": false,
@@ -56,28 +50,24 @@
     /* Window */
     "window.customTitleBarVisibility": "windowed",
     "window.commandCenter": false,
-    "window.menuBarVisibility": "compact",
-    "window.zoomLevel": 1,
     "window.title": " ",
     "window.titleBarStyle": "custom",
+    // "window.zoomLevel": 0,
 
     /* Editor */
     "editor.cursorSurroundingLines": 8,
     "editor.stickyScroll.enabled": false,
-    "editor.fontSize": 13,
     "editor.lineNumbers": "relative",
     "editor.semanticTokenColorCustomizations": {
         "enabled": true
     },
-    // "editor.fontFamily": "Iosevka Expanded",
-    // "editor.fontFamily": "FiraCode Nerd Font Mono",
-    // "editor.fontFamily": "Fira Code Retina",
     "editor.fontFamily": "JetBrains Mono",
-    // "editor.fontFamily": "'Monaspace Argon'",
-    // "editor.fontFamily": "Monocraft",
-    // "editor.fontFamily": "Hack",
-    // "editor.fontFamily": "Hack FC Ligatured CCG",
-    // "editor.fontFamily": "Hack JBM Ligatured",
+    "editor.fontSize": 15,
+    // "editor.fontWeight": "300",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.semanticHighlighting.enabled": true,
     "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
@@ -99,9 +89,9 @@
     "editor.minimap.enabled": false,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.guides.indentation": true, // Set this to "true" if using light themes
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit"
-    },
+    // "editor.codeActionsOnSave": {
+    //     "source.organizeImports": "explicit"
+    // },
     "editor.stickyScroll.scrollWithEditor": false,
     "editor.renderLineHighlight": "none",
     // "editor.renderWhitespace": "boundary",
