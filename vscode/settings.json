@@ -1,133 +1,92 @@
 {
-    /** Extension */
-    // - Error Lens
-    // - Gruvbox Theme
-    // - Material Icon Theme
-    // - Prettier Code Formatter
-    // - Vim (Priority)
-
-    "breadcrumbs.enabled": true,
-    "security.workspace.trust.untrustedFiles": "open",
-    "scm.diffDecorations": "gutter",
-
-    /* JS/TS */
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "javascript.preferences.importModuleSpecifier": "non-relative",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "typescript.preferences.importModuleSpecifier": "non-relative",
-
-    /* Formatting */
-    "[typescriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-
-    /* Git */
-    "git.autofetch": true,
-    "git.openRepositoryInParentFolders": "never",
-
-    /* Explorer */
-    "explorer.confirmDelete": false,
-    "explorer.decorations.colors": false,
-
-    /* Terminal */
-    "terminal.integrated.fontFamily": "Zed Mono Expanded",
-    "terminal.integrated.fontSize": 13,
-
-    /* Workbench */
-    "workbench.layoutControl.enabled": false,
-    "workbench.activityBar.location": "hidden",
-    "workbench.colorTheme": "Gruvbox Dark Hard",
-    "workbench.sideBar.location": "right",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.startupEditor": "none",
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.decorations.colors": false,
-    // "workbench.tree.renderIndentGuides": "none",
-    "workbench.tree.enableStickyScroll": false,
-    "workbench.editor.showTabs": "multiple",
-    "workbench.statusBar.visible": true,
-
-    /* Window */
-    "window.customTitleBarVisibility": "windowed",
-    "window.commandCenter": false,
-    "window.title": " ",
-    "window.titleBarStyle": "custom",
-    // "window.zoomLevel": 0,
-
-    /* Editor */
-    "editor.cursorSurroundingLines": 8,
-    "editor.stickyScroll.enabled": false,
-    "editor.lineNumbers": "relative",
-    "editor.semanticTokenColorCustomizations": {
-        "enabled": true
-    },
-    "editor.fontFamily": "JetBrains Mono",
-    "editor.fontSize": 15,
-    // "editor.fontWeight": "300",
-    "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": true,
-    "editor.guides.bracketPairsHorizontal": false,
-    "editor.semanticHighlighting.enabled": true,
-    "editor.fontLigatures": true,
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
-    "editor.cursorBlinking": "phase",
-    // "editor.cursorSmoothCaretAnimation": "on",
+    "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": true,
-    // Configurations from Reddit to fix autocomplete
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.acceptSuggestionOnEnter": "off",
-    "editor.tabCompletion": "on",
-    "editor.quickSuggestions": {
-        "other": "on",
-        "comments": "on",
-        "strings": "on"
-    },
-    //
-    "editor.scrollbar.verticalScrollbarSize": 5,
-    "editor.scrollbar.horizontal": "hidden",
     "editor.minimap.enabled": false,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.guides.indentation": true, // Set this to "true" if using light themes
-    // "editor.codeActionsOnSave": {
-    //     "source.organizeImports": "explicit"
-    // },
-    "editor.stickyScroll.scrollWithEditor": false,
-    "editor.renderLineHighlight": "none",
-    // "editor.renderWhitespace": "boundary",
-
-    /** EXTENSIONS **/
-    /* Prettier */
-    "prettier.jsxSingleQuote": true,
-    "prettier.tabWidth": 4,
-
-    /* VSCode Vim */
-    "vim.leader": "<space>",
+    "editor.lineHeight": 25,
+    "editor.fontSize": 15,
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.lineNumbers": "relative",
+    "editor.cursorBlinking": "smooth",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.wordWrap": "on",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit",
+    },
+    
+    // Make the window's titlebar use the workbench colorsx
+    "window.titleBarStyle": "custom",
+    
+    // To make Visual Studio Code smooth
+    "workbench.sideBar.location": "right",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.activityBar.location": "top",
+    "workbench.layoutControl.enabled": false,
+    "workbench.colorTheme": "Ayu Mirage Bordered",
+    
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontSize": 15,
+    // Prevent VSCode from modifying the terminal colors
+    "terminal.integrated.minimumContrastRatio": 1,
+    
     "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
     "vim.smartRelativeLine": true,
-    // Highlights yanking
+    "vim.leader": "<space>",
+    // This highlights yanking
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.duration": 200,
-    // Keybindings
-    "vim.normalModeKeyBindingsNonRecursive": [
-        { "before": ["<S-h>"], "commands": [":bprevious"] },
-        { "before": ["<S-l>"], "commands": [":bnext"] },
+    "vim.normalModeKeyBindings": [
         {
-            "before": ["<leader>", "g", "f"],
-            "commands": ["workbench.action.quickOpen"]
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
         },
         {
-            "before": ["<leader>", "c", "p"],
-            "commands": ["workbench.action.showCommands"]
+            "before": [
+                "<S-h>"
+            ],
+            "commands": [
+                ":bprevious"
+            ]
         },
         {
-            "before": ["<leader>", "e"],
-            "commands": ["workbench.view.explorer"]
+            "before": [
+                "<S-l>"
+            ],
+            "commands": [
+                ":bnext"
+            ],
         }
     ],
-
-    /* Improves extension performance */
+    "vim.visualModeKeyBindings": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        }
+    ],
+    
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
-    }
+    },
+    
+    "git.autofetch": true,
 }
