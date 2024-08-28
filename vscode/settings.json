@@ -18,25 +18,25 @@
     "window.titleBarStyle": "custom",
 
     // To make Visual Studio Code smooth
+    "workbench.layoutControl.enabled": false,
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.activityBar.location": "top",
-    "workbench.layoutControl.enabled": false,
     "workbench.colorTheme": "Ayu Mirage Bordered",
 
-    "terminal.integrated.fontFamily": "JetBrains Mono",
-    "terminal.integrated.fontSize": 15,
     // Prevent VSCode from modifying the terminal colors
     "terminal.integrated.minimumContrastRatio": 1,
+    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontFamily": "JetBrains Mono",
 
+    // This highlights yanking
+    "vim.highlightedyank.duration": 200,
+    "vim.highlightedyank.enable": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
     "vim.smartRelativeLine": true,
     "vim.leader": "<space>",
-    // This highlights yanking
-    "vim.highlightedyank.enable": true,
-    "vim.highlightedyank.duration": 200,
     "vim.normalModeKeyBindings": [
         {
             "before": [
@@ -83,7 +83,6 @@
         }
     ],
 
-    // Make the Vim VSCode extension run faster
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
     },
