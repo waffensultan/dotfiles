@@ -1,12 +1,11 @@
 {
-    "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": true,
     "editor.minimap.enabled": false,
-    "editor.lineHeight": 25,
-    "editor.fontSize": 15,
-    "editor.fontFamily": "JetBrains Mono",
+    "editor.lineHeight": 23,
+    "editor.fontSize": 16,
+    "editor.fontFamily": "JetBrains Mono Light",
     "editor.lineNumbers": "relative",
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
@@ -14,22 +13,22 @@
     "editor.codeActionsOnSave": {
         "source.organizeImports": "explicit",
     },
-    
+
     // Make the window's titlebar use the workbench colorsx
     "window.titleBarStyle": "custom",
-    
+
     // To make Visual Studio Code smooth
     "workbench.sideBar.location": "right",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.activityBar.location": "top",
     "workbench.layoutControl.enabled": false,
     "workbench.colorTheme": "Ayu Mirage Bordered",
-    
+
     "terminal.integrated.fontFamily": "JetBrains Mono",
     "terminal.integrated.fontSize": 15,
     // Prevent VSCode from modifying the terminal colors
     "terminal.integrated.minimumContrastRatio": 1,
-    
+
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
@@ -83,10 +82,10 @@
             ]
         }
     ],
-    
+
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
     },
-    
+
     "git.autofetch": true,
 }
