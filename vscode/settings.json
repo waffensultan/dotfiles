@@ -1,10 +1,11 @@
 {
-    // Extensions
+    // Extensions:
     // - Error Lens
     // - Material Icon Theme
-    // - Prettier Code Formatter
-    // - Pretty Typescript Errors
-    // Vim
+    // - One Dark Pro
+    // - Prettier
+    // - Pretty TypeScript Errors
+    // - Vim
     
     "editor.fontSize": 16,
     "editor.lineHeight": 24,
@@ -17,14 +18,11 @@
     "editor.lineNumbers": "relative",
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
-    "editor.wordWrap": "on",
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": "explicit",
-    },
 
     // Make the window's titlebar use the workbench colors
     "window.titleBarStyle": "custom",
 
+    "workbench.colorTheme": "One Dark Pro Darker",
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "right",
@@ -95,4 +93,7 @@
     },
 
     "git.autofetch": true,
+
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
 }
