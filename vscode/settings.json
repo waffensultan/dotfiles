@@ -7,14 +7,13 @@
     // - Pretty TypeScript Errors
     // - Vim
     
-    "editor.fontSize": 16,
-    "editor.lineHeight": 24,
+    "editor.fontSize": 17,
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": true,
     "editor.minimap.enabled": false,
-    "editor.fontFamily": "JetBrains Mono Medium",
+    "editor.fontFamily": "MonoLisa",
     "editor.lineNumbers": "relative",
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
@@ -22,8 +21,8 @@
     // Make the window's titlebar use the workbench colors
     "window.titleBarStyle": "custom",
 
-    "workbench.colorTheme": "One Dark Pro Darker",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Minimal Kiwi",
+    "workbench.iconTheme": "symbols",
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "right",
     "workbench.activityBar.location": "top",
@@ -32,7 +31,7 @@
     // Prevent VSCode from modifying the terminal colors
     "terminal.integrated.minimumContrastRatio": 1,
     "terminal.integrated.fontSize": 15,
-    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontFamily": "MonoLisa",
 
     // This highlights yanking
     "vim.highlightedyank.duration": 200,
