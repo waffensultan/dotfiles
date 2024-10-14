@@ -1,7 +1,7 @@
 {
     // Extensions:
     // - Error Lens
-    // - Material Icon Theme
+    // - Symbols
     // - Minimal Kiwi
     // - Prettier
     // - Pretty TypeScript Errors
@@ -20,9 +20,10 @@
 
     // Make the window's titlebar use the workbench colors
     "window.titleBarStyle": "custom",
+    "window.commandCenter": false,
 
-    "workbench.colorTheme": "Minimal Kiwi",
     "workbench.iconTheme": "symbols",
+    "workbench.colorTheme": "Minimal Kiwi",
     "workbench.startupEditor": "none",
     "workbench.sideBar.location": "right",
     "workbench.activityBar.location": "top",
