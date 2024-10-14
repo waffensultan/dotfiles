@@ -44,47 +44,26 @@
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
-            "before": [
-                "<leader>",
-                "e"
-            ],
-            "commands": [
-                "workbench.view.explorer"
-            ]
+            "before": [ "<leader>", "e" ],
+            "commands": [ "workbench.view.explorer" ]
         },
         {
-            "before": [
-                "<S-h>"
-            ],
-            "commands": [
-                ":bprevious"
-            ]
+            "before": [ "<S-h>" ],
+            "commands": [ ":bprevious" ]
         },
         {
-            "before": [
-                "<S-l>"
-            ],
-            "commands": [
-                ":bnext"
-            ],
+            "before": [ "<S-l>" ],
+            "commands": [ ":bnext" ],
         }
     ],
     "vim.visualModeKeyBindings": [
         {
-            "before": [
-                ">"
-            ],
-            "commands": [
-                "editor.action.indentLines"
-            ]
+            "before": [ ">" ],
+            "commands": [ "editor.action.indentLines" ]
         },
         {
-            "before": [
-                "<"
-            ],
-            "commands": [
-                "editor.action.outdentLines"
-            ]
+            "before": [ "<" ],
+            "commands": [ "editor.action.outdentLines" ]
         }
     ],
 
