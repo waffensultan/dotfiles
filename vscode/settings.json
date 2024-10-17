@@ -7,27 +7,31 @@
     // - Pretty TypeScript Errors
     // - Vim
     
-    "editor.fontSize": 17,
+    "editor.fontSize": 18,
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": true,
     "editor.minimap.enabled": false,
-    "editor.fontFamily": "MonoLisa",
+    "editor.fontFamily": "Geist Mono",
     "editor.lineNumbers": "relative",
     "editor.cursorBlinking": "smooth",
     "editor.cursorSmoothCaretAnimation": "on",
 
+    "zenMode.hideLineNumbers": false,
+
     // Make the window's titlebar use the workbench colors
     "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "compact",
     "window.commandCenter": false,
 
-    "workbench.iconTheme": "symbols",
-    "workbench.colorTheme": "Minimal Kiwi",
-    "workbench.startupEditor": "none",
-    "workbench.sideBar.location": "right",
     "workbench.activityBar.location": "top",
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Minimal Kiwi",
+    "workbench.iconTheme": "symbols",
     "workbench.layoutControl.enabled": false,
+    "workbench.statusBar.visible": false,
 
     // Prevent VSCode from modifying the terminal colors
     "terminal.integrated.minimumContrastRatio": 1,
