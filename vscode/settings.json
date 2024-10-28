@@ -1,12 +1,15 @@
 {
     // Extensions:
+    // - Discord Presence
     // - Error Lens
-    // - Symbols
-    // - Minimal Kiwi
+    // - GitLens
+    // - Markdown Preview Enhanced
     // - Monokai Pro
     // - Prettier
     // - Pretty TypeScript Errors
+    // - Symbols
     // - Vim
+    // - vscode-pets
     // - WSL
     
     "editor.fontSize": 17,
@@ -16,6 +19,7 @@
     "editor.smoothScrolling": true,
     "editor.stickyScroll.enabled": false,
     "editor.minimap.enabled": false,
+    // "editor.fontFamily": "Geist Mono",
     "editor.fontFamily": "Fira Code",
     "editor.lineNumbers": "relative",
     "editor.cursorBlinking": "smooth",
@@ -39,7 +43,7 @@
 
     "terminal.integrated.minimumContrastRatio": 1,
     "terminal.integrated.fontSize": 16,
-    "terminal.integrated.fontFamily": "Geist Mono",
+    "terminal.integrated.fontFamily": "Fira Code",
 
     "vim.highlightedyank.duration": 200,
     "vim.highlightedyank.enable": true,
@@ -84,4 +88,6 @@
 
     "discord.lowerDetailsIdling": "Relapsing",
     "discord.detailsIdling": "Relapsing",
+
+    "markdown-preview-enhanced.previewColorScheme": "systemColorScheme",
 }
