@@ -5,7 +5,6 @@
     // - GitLens
     // - Markdown Preview Enhanced
     // - Monokai Pro
-    // - GitHub Theme
     // - Prettier
     // - Pretty TypeScript Errors
     // - Symbols
@@ -20,9 +19,7 @@
     "editor.smoothScrolling": true,
     "editor.stickyScroll.enabled": false,
     "editor.minimap.enabled": false,
-    // "editor.fontFamily": "Fira Code",
     "editor.fontFamily": "Geist Mono",
-    // "editor.fontFamily": "Fira Code",
     "editor.lineNumbers": "relative",
     "editor.cursorBlinking": "smooth",
     "editor.wordWrap": "off",
@@ -37,7 +34,7 @@
     "workbench.activityBar.location": "top",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
-    "workbench.colorTheme": "GitHub Dark Default",
+    "workbench.colorTheme": "Monokai Pro (Filter Machine)",
     "workbench.iconTheme": "Monokai Pro (Filter Machine) Icons",
     "workbench.editor.showTabs": "multiple",
     "workbench.statusBar.visible": true,
