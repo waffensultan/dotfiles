@@ -1,27 +1,14 @@
 {
-    // Extensions:
-    // - Discord Presence
-    // - Error Lens
-    // - GitLens
-    // - Markdown Preview Enhanced
-    // - Best Themes Redefined
-    // - Material Icon Theme
-    // - Prettier
-    // - Pretty TypeScript Errors
-    // - Vim
-    // - WSL
-    // - Prisma
-
     "git.autofetch": true,
 
-    "editor.fontSize": 16,
-    "editor.defaultColorDecorators": true,
+    "editor.fontSize": 15,
+    "editor.defaultColorDecorators": "auto",
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": true,
     "editor.stickyScroll.enabled": false,
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.fontFamily": "SF Mono",
@@ -45,7 +32,7 @@
     "workbench.layoutControl.enabled": false,
 
     "terminal.integrated.minimumContrastRatio": 1,
-    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontSize": 15,
     "terminal.integrated.fontFamily": "SF Mono",
 
     "vim.highlightedyank.duration": 200,
@@ -67,6 +54,23 @@
         {
             "before": ["<S-l>"],
             "commands": [":bnext"]
+        },
+        // For switching panes
+        {
+            "before": ["ctrl+h"],
+            "commands": ["workbench.action.navigateLeft"]
+        },
+        {
+            "before": ["ctrl+l"],
+            "commands": ["workbench.action.navigateRight"]
+        },
+        {
+            "before": ["ctrl+k"],
+            "commands": ["workbench.action.navigateUp"]
+        },
+        {
+            "before": ["ctrl+j"],
+            "commands": ["workbench.action.navigateDown"]
         }
     ],
     "vim.visualModeKeyBindings": [
@@ -80,7 +84,7 @@
         }
     ],
 
-    // Make the theme "One Monokai Darker" more vibrant
+    /* --- To make the theme "One Monokai Darker" more vibrant --- */
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -126,14 +130,17 @@
         ]
     },
     "workbench.colorCustomizations": {
-        "tab.activeBorderTop": "#3492d4",
-        "activityBar.activeBorder": "#3492d4",
         "editor.background": "#090b10",
+        "tab.activeBorderTop": "#3492d4",
+        "statusBar.background": "#0000ff",
+        "statusBar.foreground": "#ffff",
+        "activityBar.activeBorder": "#3492d4",
         "sideBar.background": "#080a0f",
         "sideBar.border": "#080a0f",
         "activityBar.background": "#080a0f",
         "titleBar.activeBackground": "#080a0f"
     },
+    /* --- END --- */
 
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
@@ -143,10 +150,14 @@
         "editor.defaultFormatter": "Prisma.prisma"
     },
 
+    "[go]": {
+        "editor.defaultFormatter": "golang.go"
+    },
+
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
 
     "markdown-preview-enhanced.previewColorScheme": "systemColorScheme",
 
-    "prettier.tabWidth": 4,
+    "prettier.tabWidth": 4
 }
