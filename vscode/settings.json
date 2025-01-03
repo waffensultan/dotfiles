@@ -2,13 +2,13 @@
     "git.autofetch": true,
 
     "editor.fontSize": 15,
-    "editor.defaultColorDecorators": "auto",
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": true,
     "editor.stickyScroll.enabled": false,
     "editor.minimap.enabled": true,
+    "editor.defaultColorDecorators": "auto",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.fontFamily": "SF Mono",
@@ -18,9 +18,9 @@
 
     "zenMode.hideLineNumbers": false,
 
+    "window.commandCenter": false,
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "compact",
-    "window.commandCenter": false,
 
     "workbench.activityBar.location": "top",
     "workbench.colorTheme": "Best Themes - One Monokai Darker",
@@ -32,16 +32,16 @@
     "workbench.layoutControl.enabled": false,
 
     "terminal.integrated.minimumContrastRatio": 1,
-    "terminal.integrated.fontSize": 15,
+    "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontFamily": "SF Mono",
 
+    "vim.leader": "<space>",
     "vim.highlightedyank.duration": 200,
     "vim.highlightedyank.enable": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
     "vim.smartRelativeLine": true,
-    "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         {
             "before": ["<leader>", "e"],
@@ -159,5 +159,13 @@
 
     "markdown-preview-enhanced.previewColorScheme": "systemColorScheme",
 
-    "prettier.tabWidth": 4
+    "prettier.tabWidth": 4,
+
+    "animations.Enabled": true,
+
+    "vscode_custom_css.imports": [
+        "file:///c:/Users/Waffen SA/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js"
+    ],
+
+    "gitlens.ai.model": "openai:o1-preview"
 }
