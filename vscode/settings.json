@@ -15,12 +15,13 @@
     "editor.cursorBlinking": "smooth",
     "editor.lineNumbers": "relative",
     "editor.wordWrap": "off",
+    "editor.inlayHints.enabled": "off",
 
     "zenMode.hideLineNumbers": false,
 
     "window.commandCenter": false,
     "window.titleBarStyle": "custom",
-    "window.menuBarVisibility": "compact",
+    "window.menuBarVisibility": "toggle",
 
     "workbench.activityBar.location": "top",
     "workbench.colorTheme": "Best Themes - One Monokai Darker",
@@ -30,10 +31,13 @@
     "workbench.editor.showTabs": "multiple",
     "workbench.statusBar.visible": true,
     "workbench.layoutControl.enabled": false,
+    "workbench.list.smoothScrolling": true,
 
     "terminal.integrated.minimumContrastRatio": 1,
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.fontFamily": "SF Mono",
+    "terminal.integrated.smoothScrolling": true,
+    "terminal.integrated.cursorBlinking": true,
 
     "vim.leader": "<space>",
     "vim.highlightedyank.duration": 200,
@@ -142,12 +146,17 @@
     },
     /* --- END --- */
 
+    /* EXTENSION SETTINGS */
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
     },
 
     "[prisma]": {
         "editor.defaultFormatter": "Prisma.prisma"
+    },
+
+    "[java]": {
+        "editor.defaultFormatter": "redhat.java"
     },
 
     "[go]": {
@@ -167,5 +176,7 @@
         "file:///c:/Users/Waffen SA/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js"
     ],
 
-    "gitlens.ai.model": "openai:o1-preview"
+    "gitlens.ai.model": "openai:o1-preview",
+
+    "redhat.telemetry.enabled": false
 }
