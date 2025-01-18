@@ -170,12 +170,6 @@
 
     "prettier.tabWidth": 4,
 
-    "animations.Enabled": true,
-
-    "vscode_custom_css.imports": [
-        "file:///c:/Users/Waffen SA/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.4/dist/updateHandler.js"
-    ],
-
     "gitlens.ai.model": "openai:o1-preview",
 
     "redhat.telemetry.enabled": false
