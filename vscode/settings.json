@@ -1,6 +1,8 @@
 {
     "git.autofetch": true,
 
+    "zenMode.hideLineNumbers": false,
+
     "editor.fontSize": 15,
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
@@ -11,13 +13,11 @@
     "editor.defaultColorDecorators": "auto",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.cursorSmoothCaretAnimation": "on",
-    "editor.fontFamily": "SF Mono",
+    "editor.fontFamily": "JetBrains Mono",
     "editor.cursorBlinking": "smooth",
     "editor.lineNumbers": "relative",
     "editor.wordWrap": "off",
     "editor.inlayHints.enabled": "off",
-
-    "zenMode.hideLineNumbers": false,
 
     "window.commandCenter": false,
     "window.titleBarStyle": "custom",
@@ -34,7 +34,7 @@
     "workbench.list.smoothScrolling": true,
 
     "terminal.integrated.minimumContrastRatio": 1,
-    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontSize": 16,
     "terminal.integrated.fontFamily": "SF Mono",
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.cursorBlinking": true,
@@ -58,23 +58,6 @@
         {
             "before": ["<S-l>"],
             "commands": [":bnext"]
-        },
-        // For switching panes
-        {
-            "before": ["ctrl+h"],
-            "commands": ["workbench.action.navigateLeft"]
-        },
-        {
-            "before": ["ctrl+l"],
-            "commands": ["workbench.action.navigateRight"]
-        },
-        {
-            "before": ["ctrl+k"],
-            "commands": ["workbench.action.navigateUp"]
-        },
-        {
-            "before": ["ctrl+j"],
-            "commands": ["workbench.action.navigateDown"]
         }
     ],
     "vim.visualModeKeyBindings": [
@@ -151,18 +134,6 @@
         "vscodevim.vim": 1
     },
 
-    "[prisma]": {
-        "editor.defaultFormatter": "Prisma.prisma"
-    },
-
-    "[java]": {
-        "editor.defaultFormatter": "redhat.java"
-    },
-
-    "[go]": {
-        "editor.defaultFormatter": "golang.go"
-    },
-
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
 
@@ -170,7 +141,5 @@
 
     "prettier.tabWidth": 4,
 
-    "gitlens.ai.model": "openai:o1-preview",
-
-    "redhat.telemetry.enabled": false
+    "gitlens.ai.model": "openai:o1-preview"
 }
