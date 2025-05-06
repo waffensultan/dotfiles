@@ -10,6 +10,7 @@
     "editor.smoothScrolling": true,
     "editor.stickyScroll.enabled": false,
     "editor.minimap.enabled": true,
+    "editor.formatOnSave": true,
     "editor.defaultColorDecorators": "auto",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.cursorSmoothCaretAnimation": "on",
@@ -134,12 +135,14 @@
         "vscodevim.vim": 1
     },
 
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
+    },
+
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
 
     "markdown-preview-enhanced.previewColorScheme": "systemColorScheme",
 
-    "prettier.tabWidth": 4,
-
-    "gitlens.ai.model": "openai:o1-preview"
+    "prettier.tabWidth": 4
 }
