@@ -61,10 +61,6 @@
         {
             "before": ["<leader>", "f"],
             "commands": ["workbench.action.quickOpen"]
-        },
-        {
-            "before": ["<leader>", "p"],
-            "commands": ["workbench.action.showCommands"]
         }
     ],
     "vim.visualModeKeyBindings": [
