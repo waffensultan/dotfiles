@@ -46,6 +46,7 @@
     "vim.hlsearch": true,
     "vim.smartRelativeLine": true,
     "vim.highlightedyank.enable": true,
+    "vim.easymotion": true,
     "vim.highlightedyank.duration": 200,
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
@@ -58,7 +59,7 @@
             "commands": [":bnext"]
         },
         {
-            "before": ["<leader>", "<leader>"],
+            "before": ["<leader>", "f"],
             "commands": ["workbench.action.quickOpen"]
         },
         {
