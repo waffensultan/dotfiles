@@ -41,18 +41,14 @@
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.cursorBlinking": true,
 
-    "vim.leader": "<space>",
-    "vim.highlightedyank.duration": 200,
-    "vim.highlightedyank.enable": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
     "vim.smartRelativeLine": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.duration": 200,
+    "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
-        {
-            "before": ["<leader>", "e"],
-            "commands": ["workbench.view.explorer"]
-        },
         {
             "before": ["<S-h>"],
             "commands": [":bprevious"]
@@ -60,6 +56,14 @@
         {
             "before": ["<S-l>"],
             "commands": [":bnext"]
+        },
+        {
+            "before": ["<leader>", "<leader>"],
+            "commands": ["workbench.action.quickOpen"]
+        },
+        {
+            "before": ["<leader>", "p"],
+            "commands": ["workbench.action.showCommands"]
         }
     ],
     "vim.visualModeKeyBindings": [
@@ -146,7 +150,6 @@
     "markdown-preview-enhanced.previewColorScheme": "systemColorScheme",
 
     "prettier.tabWidth": 4,
-    "redhat.telemetry.enabled": true,
     "vscode_custom_css.imports": [
         "file:///c:/Users/Waffen SA/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
     ]
