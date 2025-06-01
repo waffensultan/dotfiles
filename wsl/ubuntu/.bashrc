@@ -123,31 +123,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Changes I made
 export PATH="$PATH:/home/waffensultan/.local/bin"
-eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/di4am0nd.omp.json)" # chosen OMP theme
+eval "$(oh-my-posh init bash --config ~/.cache/oh-my-posh/themes/clean-detailed.omp.json)" # chosen OMP theme
 source ~/.git-completion.bash
 
-# Initialize a flag to detect first prompt
-__first_prompt_done=0
-
-function add_newline_after_first_prompt() {
-  if [[ $__first_prompt_done -eq 1 ]]; then
-    printf '\n'
-  else
-    __first_prompt_done=1
-  fi
-}
-
-# Override clear to reset the flag too
-clear() {
-  command clear "$@"
-  __first_prompt_done=0
-}
-
-# Preserve existing PROMPT_COMMAND
-if [[ -n "$PROMPT_COMMAND" ]]; then
-  PROMPT_COMMAND="add_newline_after_first_prompt; $PROMPT_COMMAND"
-else
-  PROMPT_COMMAND="add_newline_after_first_prompt"
-fi
-
-alias ls='lsd -l --blocks "name,size,date"'
+alias ls='lsd -l --blocks "name,size,date" --date relative'
