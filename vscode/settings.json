@@ -3,14 +3,14 @@
 
     "zenMode.hideLineNumbers": false,
 
-    "editor.fontSize": 17, // Options: 18 (Dank Mono), 17 (JetBrains Mono & Maple Mono)
+    "editor.fontSize": 16, // Options: 18 (Dank Mono), 17 (JetBrains Mono & Maple Mono)
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
     "editor.semanticHighlighting.enabled": true,
     "editor.smoothScrolling": true,
     "editor.stickyScroll.enabled": false,
     "editor.minimap.enabled": true,
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": false,
     "editor.defaultColorDecorators": "auto",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.cursorSmoothCaretAnimation": "on",
@@ -28,7 +28,7 @@
     "workbench.activityBar.location": "top",
     "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "flow-dark",
     "workbench.editor.showTabs": "multiple",
     "workbench.colorTheme": "Best Themes - One Monokai Darker",
     "workbench.statusBar.visible": true,
@@ -36,7 +36,7 @@
     "workbench.list.smoothScrolling": true,
 
     "terminal.integrated.fontFamily": "Maple Mono NF",
-    "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.minimumContrastRatio": 1,
     "terminal.integrated.fontSize": 17,
     "terminal.integrated.smoothScrolling": true,
@@ -72,6 +72,7 @@
     "vim.highlightedyank.duration": 200,
     "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
+        // Switching between buffers
         {
             "before": ["<S-h>"],
             "commands": [":bprevious"]
@@ -80,6 +81,33 @@
             "before": ["<S-l>"],
             "commands": [":bnext"]
         },
+        // Pane splits
+        {
+            "before": ["leader", "v"],
+            "commands": [":vsplit"]
+        },
+        {
+            "before": ["leader", "s"],
+            "commands": [":split"]
+        },
+        // Focus pane splits
+        {
+            "before": ["leader", "h"],
+            "commands": ["workbench.action.focusLeftGroup"]
+        },
+        {
+            "before": ["leader", "j"],
+            "commands": ["workbench.action.focusBelowGroup"]
+        },
+        {
+            "before": ["leader", "k"],
+            "commands": ["workbench.action.focusAboveGroup"]
+        },
+        {
+            "before": ["leader", "l"],
+            "commands": ["workbench.action.focusRightGroup"]
+        },
+        // Nice to have
         {
             "before": ["<leader>", "f"],
             "commands": ["workbench.action.quickOpen"]
@@ -93,7 +121,7 @@
         {
             "before": ["<"],
             "commands": ["editor.action.outdentLines"]
-        }
+        },
     ],
 
     /* --- To make the theme "One Monokai Darker" more vibrant --- */
@@ -155,6 +183,7 @@
     /* --- END --- */
 
     /* EXTENSION SETTINGS */
+    "extensions.ignoreRecommendations": true,
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
     },
@@ -166,11 +195,6 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "typescript.updateImportsOnFileMove.enabled": "always",
 
-    "markdown-preview-enhanced.previewColorScheme": "systemColorScheme",
-
     "prettier.tabWidth": 4,
-
-    "vscode_custom_css.imports": [
-        "file:///c:/Users/Waffen SA/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
-    ]
+    "chat.commandCenter.enabled": false
 }
