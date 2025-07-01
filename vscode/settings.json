@@ -204,5 +204,9 @@
         "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
     },
     "solidity.formatter": "prettier",
-    "solidity.telemetry": true
+    "solidity.telemetry": true,
+
+    /* DISCORD RICH PRESENCE */
+    "discord.removeLowerDetails": true,
+    "discord.removeRemoteRepository": true
 }
