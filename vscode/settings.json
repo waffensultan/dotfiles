@@ -1,3 +1,5 @@
+{
+    "git.autofetch": true,
 
     "zenMode.hideLineNumbers": false,
 
@@ -119,7 +121,7 @@
         {
             "before": ["<"],
             "commands": ["editor.action.outdentLines"]
-        },
+        }
     ],
 
     /* --- To make the theme "One Monokai Darker" more vibrant --- */
@@ -195,5 +197,12 @@
 
     "prettier.tabWidth": 4,
 
-    "chat.commandCenter.enabled": false
+    "chat.commandCenter.enabled": false,
+
+    /* SOLIDITY */
+    "[solidity]": {
+        "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+    },
+    "solidity.formatter": "prettier",
+    "solidity.telemetry": true
 }
