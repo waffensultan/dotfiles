@@ -10,7 +10,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "n",
+        "key": "a",
         "command": "explorer.newFile",
         "when": "filesExplorerFocus && !inputFocus"
     },
@@ -20,14 +20,9 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
-        "key": "shift+n",
+        "key": "shift+a",
         "command": "explorer.newFolder",
         "when": "explorerViewletFocus"
-    },
-    {
-        "key": "shift+n",
-        "command": "workbench.action.newWindow",
-        "when": "!explorerViewletFocus"
     },
     {
         "command": "deleteFile",
