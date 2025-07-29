@@ -13,7 +13,7 @@
     "editor.stickyScroll.enabled": false,
     "editor.formatOnSave": false,
     "editor.defaultColorDecorators": "auto",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // Use Prettier as default formatter
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.fontFamily": "Maple Mono", // Options: Dank Mono, JetBrains  Mono, Maple Mono
     "editor.cursorBlinking": "smooth",
@@ -31,6 +31,7 @@
     "workbench.iconTheme": "flow-dark",
     "workbench.editor.showTabs": "multiple",
     "workbench.colorTheme": "Best Themes - One Monokai Darker",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
     "workbench.statusBar.visible": true,
     "workbench.list.smoothScrolling": true,
     "workbench.layoutControl.enabled": false,
