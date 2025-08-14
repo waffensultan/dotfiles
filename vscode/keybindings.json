@@ -10,7 +10,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "a",
+        "key": "f",
         "command": "explorer.newFile",
         "when": "filesExplorerFocus && !inputFocus"
     },
@@ -20,7 +20,7 @@
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
-        "key": "shift+a",
+        "key": "shift+f",
         "command": "explorer.newFolder",
         "when": "explorerViewletFocus"
     },
