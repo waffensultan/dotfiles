@@ -21,17 +21,15 @@
     "editor.wordWrap": "off",
     "editor.inlayHints.enabled": "off",
 
-    "window.commandCenter": false,
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "toggle",
-
-    "workbench.activityBar.location": "top",
-    "workbench.sideBar.location": "right",
     "workbench.startupEditor": "none",
     "workbench.iconTheme": "flow-dark",
     "workbench.editor.showTabs": "multiple",
     "workbench.colorTheme": "Best Themes - One Monokai Darker",
     "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.sideBar.location": "right",
+    "window.commandCenter": false,
     "workbench.statusBar.visible": true,
     "workbench.list.smoothScrolling": true,
     "workbench.layoutControl.enabled": false,
@@ -209,5 +207,7 @@
 
     /* DISCORD RICH PRESENCE */
     "discord.removeLowerDetails": true,
-    "discord.removeRemoteRepository": true
+    "discord.removeRemoteRepository": true,
+
+    "git.blame.editorDecoration.enabled": true
 }
