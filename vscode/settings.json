@@ -3,7 +3,7 @@
 
     "zenMode.hideLineNumbers": false,
 
-    "editor.fontSize": 16, // Options: 18 (Dank Mono), 17 (JetBrains Mono & Maple Mono)
+    "editor.fontSize": 15, // Options: 18 (Dank Mono), 17 (JetBrains Mono & Maple Mono)
     "editor.cursorSurroundingLines": 8, // Mostly for Vim
     "editor.fontLigatures": true,
     "editor.formatOnPaste": true,
@@ -20,24 +20,29 @@
     "editor.lineNumbers": "relative",
     "editor.wordWrap": "off",
     "editor.inlayHints.enabled": "off",
+    "editor.renderLineHighlight": "none",
 
+    "window.zoomLevel": 0.3,
+    "window.commandCenter": false,
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "toggle",
-    "workbench.startupEditor": "none",
-    "workbench.iconTheme": "flow-dark",
-    "workbench.editor.showTabs": "multiple",
-    "workbench.colorTheme": "Best Themes - One Monokai Darker",
-    "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "workbench.sideBar.location": "right",
-    "window.commandCenter": false,
+
+    "workbench.tree.indent": 14,
     "workbench.statusBar.visible": true,
     "workbench.list.smoothScrolling": true,
     "workbench.layoutControl.enabled": false,
+    "workbench.tree.renderIndentGuides": "always",
+    "workbench.startupEditor": "none",
+    "workbench.iconTheme": "flow-dark",
+    "workbench.editor.showTabs": "multiple",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "workbench.colorTheme": "Best Themes - One Monokai Darker",
+    "workbench.sideBar.location": "right",
 
     "terminal.integrated.fontFamily": "Maple Mono NF",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
     "terminal.integrated.minimumContrastRatio": 1,
-    "terminal.integrated.fontSize": 17,
+    "terminal.integrated.fontSize": 16,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.profiles.windows": {
@@ -170,25 +175,31 @@
     },
     "workbench.colorCustomizations": {
         "editor.background": "#090b10",
-        "tab.activeBorderTop": "#3492d4",
+        "editorGroupHeader.tabsBackground": "#090b10",
+
+        "tab.activeBorderTop": "#0000ff",
+        "tab.activeBackground": "#090b10",
+        "tab.inactiveBackground": "#090b10",
+
         "statusBar.background": "#0000ff",
         "statusBar.foreground": "#ffff",
+
         "activityBar.activeBorder": "#3492d4",
+        "activityBar.background": "#080a0f",
+
         "sideBar.background": "#080a0f",
         "sideBar.border": "#080a0f",
-        "activityBar.background": "#080a0f",
+
         "titleBar.activeBackground": "#080a0f"
     },
     /* --- END --- */
+
+    "git.blame.editorDecoration.enabled": true,
 
     /* EXTENSION SETTINGS */
     "extensions.ignoreRecommendations": true,
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
-    },
-
-    "[prisma]": {
-        "editor.defaultFormatter": "Prisma.prisma"
     },
 
     "javascript.updateImportsOnFileMove.enabled": "always",
@@ -205,9 +216,7 @@
     "solidity.formatter": "prettier",
     "solidity.telemetry": true,
 
-    /* DISCORD RICH PRESENCE */
-    "discord.removeLowerDetails": true,
-    "discord.removeRemoteRepository": true,
-
-    "git.blame.editorDecoration.enabled": true
+    "vscode_custom_css.imports": [
+        "file:///c:/Users/Waffen SA/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
+    ]
 }
