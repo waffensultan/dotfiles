@@ -27,7 +27,7 @@
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "toggle",
 
-    "workbench.tree.indent": 14,
+    "workbench.tree.indent": 16,
     "workbench.statusBar.visible": true,
     "workbench.list.smoothScrolling": true,
     "workbench.layoutControl.enabled": false,
