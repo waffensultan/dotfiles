@@ -41,8 +41,9 @@
 
     "terminal.integrated.fontFamily": "Maple Mono NF",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.external.windowsExec": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
     "terminal.integrated.minimumContrastRatio": 1,
-    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.fontSize": 15,
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.profiles.windows": {
