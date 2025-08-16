@@ -3,6 +3,15 @@
 
     "zenMode.hideLineNumbers": false,
 
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // Use Prettier as default formatter
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontFamily": "Maple Mono", // Options: Dank Mono, JetBrains  Mono, Maple Mono
+    "editor.cursorBlinking": "smooth",
+    "editor.lineNumbers": "relative",
+    "editor.wordWrap": "off",
+    "editor.inlayHints.enabled": "off",
+    "editor.renderLineHighlight": "none",
+    "editor.defaultColorDecorators": "auto",
     "editor.fontSize": 15, // Options: 18 (Dank Mono), 17 (JetBrains Mono & Maple Mono)
     "editor.cursorSurroundingLines": 8, // Mostly for Vim
     "editor.fontLigatures": true,
@@ -12,25 +21,12 @@
     "editor.minimap.enabled": true,
     "editor.stickyScroll.enabled": false,
     "editor.formatOnSave": false,
-    "editor.defaultColorDecorators": "auto",
-    "editor.defaultFormatter": "esbenp.prettier-vscode", // Use Prettier as default formatter
-    "editor.cursorSmoothCaretAnimation": "on",
-    "editor.fontFamily": "Maple Mono", // Options: Dank Mono, JetBrains  Mono, Maple Mono
-    "editor.cursorBlinking": "smooth",
-    "editor.lineNumbers": "relative",
-    "editor.wordWrap": "off",
-    "editor.inlayHints.enabled": "off",
-    "editor.renderLineHighlight": "none",
 
-    "window.zoomLevel": 0.3,
-    "window.commandCenter": false,
     "window.titleBarStyle": "custom",
     "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 0.3,
+    "window.commandCenter": false,
 
-    "workbench.tree.indent": 16,
-    "workbench.statusBar.visible": true,
-    "workbench.list.smoothScrolling": true,
-    "workbench.layoutControl.enabled": false,
     "workbench.tree.renderIndentGuides": "always",
     "workbench.startupEditor": "none",
     "workbench.iconTheme": "flow-dark",
@@ -38,6 +34,10 @@
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "workbench.colorTheme": "Best Themes - One Monokai Darker",
     "workbench.sideBar.location": "right",
+    "workbench.tree.indent": 16,
+    "workbench.statusBar.visible": true,
+    "workbench.list.smoothScrolling": true,
+    "workbench.layoutControl.enabled": false,
 
     "terminal.integrated.fontFamily": "Maple Mono NF",
     "terminal.integrated.defaultProfile.windows": "PowerShell",
@@ -68,6 +68,7 @@
         }
     },
 
+    "vim.leader": "<space>",
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
@@ -75,7 +76,6 @@
     "vim.easymotion": true,
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.duration": 200,
-    "vim.leader": "<space>",
     "vim.normalModeKeyBindings": [
         // Switching between buffers
         {
@@ -195,6 +195,11 @@
     },
     /* --- END --- */
 
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+
+    "chat.commandCenter.enabled": false,
+
     "git.blame.editorDecoration.enabled": true,
 
     /* EXTENSION SETTINGS */
@@ -203,19 +208,15 @@
         "vscodevim.vim": 1
     },
 
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "typescript.updateImportsOnFileMove.enabled": "always",
-
+    /* PRETTIER */
     "prettier.tabWidth": 4,
 
-    "chat.commandCenter.enabled": false,
-
     /* SOLIDITY */
+    "solidity.formatter": "prettier",
+    "solidity.telemetry": true,
     "[solidity]": {
         "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
     },
-    "solidity.formatter": "prettier",
-    "solidity.telemetry": true,
 
     "vscode_custom_css.imports": [
         "file:///c:/Users/Waffen SA/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
