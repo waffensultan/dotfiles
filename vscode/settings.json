@@ -26,6 +26,7 @@
     "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0.3,
     "window.commandCenter": false,
+    "window.confirmSaveUntitledWorkspace": false,
 
     "workbench.tree.renderIndentGuides": "always",
     "workbench.startupEditor": "none",
@@ -216,9 +217,5 @@
     "solidity.telemetry": true,
     "[solidity]": {
         "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
-    },
-
-    "vscode_custom_css.imports": [
-        "file:///c:/Users/Waffen SA/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.7/dist/updateHandler.js"
-    ]
+    }
 }
